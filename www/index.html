@@ -64,30 +64,20 @@
 <style src="main.css">
 </style>
 
-<script src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js"
-type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+var change, counter, list;
 
-<script type="text/coffeescript">
-list = ["Perfect",
-        "Beautiful",
-        "Adorable",
-        "Sweet",
-        "Caring",
-        "so Sassy!",
-        "Cute :)",
-        "Dreamy",
-        "Gorgeous",
-        "Insane",
-        "Punk Rock",
-        "<font color='#FF0000'>C</font><font color='#FF7F00'>o</font><font color='#FFFF00'>l</font><font color='#00FF00'>o</font><font color='#0000FF'>r</font><font color='#4B0082'>f</font><font color='#8F00FF'>ul</font>"]
+list = ["Perfect", "Beautiful", "Adorable", "Sweet", "Caring", "so Sassy!", "Cute :)", "Dreamy", "Gorgeous", "Insane", "Punk Rock", "<font color='#FF0000'>C</font><font color='#FF7F00'>o</font><font color='#FFFF00'>l</font><font color='#00FF00'>o</font><font color='#0000FF'>r</font><font color='#4B0082'>f</font><font color='#8F00FF'>ul</font>"];
 
-change = ->
-  rand = Math.floor Math.random()*12
-  document.getElementById("attribute").innerHTML=list[rand]
+change = function() {
+  var rand;
+  rand = Math.floor(Math.random() * 12);
+  return document.getElementById("attribute").innerHTML = list[rand];
+};
 
-counter = window.setInterval(->
-  change()
-, 3000)
+counter = window.setInterval(function() {
+  return change();
+}, 3000);
 </script>
 </body>
 </html>
