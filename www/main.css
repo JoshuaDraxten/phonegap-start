@@ -1,0 +1,71 @@
+h1 {
+  text-align:center;
+  font-family:"Arial", Arial, sans-serif;
+  font-size:3em;
+}
+h2 {
+  text-align:center;
+  font-family:"Arial", Arial, sans-serif;
+  font-size:em;
+}
+p {
+  text-align:center;
+  font-family:"Arial", helvetica, sans-serif, bold;
+  font-size:1em;
+}
+table {
+  margin-left:-10px;
+  margin-top:-1%;
+  position:static;
+  width: 102%;
+  height: 105%;
+}
+img.point1 {
+  position:absolute;
+  margin-left:25%;
+  width: 10%;
+  top: 200%;
+  overflow: hidden;
+}
+img.point2 {
+  position:absolute;
+  margin-left:25%;
+  width: 11%;
+  top: 300%;
+  overflow: hidden;
+}
+img.point3 {
+  position:absolute;
+  margin-left:25%;
+  width: 11%;
+  top: 400%;
+  overflow: hidden;
+}
+img.banner {
+  position:absolute;
+  width: 100%;
+  bottom: 0px;
+  overflow: hidden;
+}
+img.heart {
+  position:absolute;
+  width: 10%;
+  top: 140%;
+  right: 20%;
+}
+img.light {
+  position:absolute;
+  width: 15%;
+  top: 260%;
+  right: 5%;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(-30deg);
+}
+img.nerd {
+  position:absolute;
+  width: 25%;
+  right: 75%;
+  bottom: -240%;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+}
