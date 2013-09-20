@@ -1,27 +1,164 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html style="overflow-x: hidden">
+<title>Dear lydia</title>
+<body bgcolor="#F2E6BB">
+<table bgcolor="#F8FDD8" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td>
+      <h1 class=logo>Dear Lydia:</h1>
+      <br></br><br></br><br></br><br></br><br></br><br></br>
+      <img class="banner" src="content/banner.svg">
+      </td> 
+</tr>
+</table>
+<table bgcolor="#63BD99" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td>
+      <h1>You're <font id=attribute>Perfect<font></h1>
+      <p>I love everything about you</p>
+      <p>You're uniqe and everything I could ask for</p>
+      <p>You make me that happiest guy alive :)</p>
+      <img class=heart src="content/heart.svg">
+      </td> 
+</tr>  
+</table>
+<table bgcolor="#202724" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td>
+      <img class=point1 src="content/point1.svg">
+      <img class=light src="content/light.svg">
+      <font color="#F3F3F3">
+      <h1>When life has royally sucked</h1>
+      <p>You where there for me.</p>
+      <p>You've made such a difference in my life</p>
+      <p>And mean the world to me</p>
+      </font>
+      </td> 
+</tr>  
+</table>
+<table bgcolor="#DD4225" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td>
+      <img class=point2 src="content/point2.svg">
+      <h1>So basically...</h1>
+      <p>this is a geeky note for you</p>
+      <h2>All just to say</h2>
+      <img class=nerd src="content/nerd.svg">
+      </td> 
+</tr>  
+</table>
+<table bgcolor="#F2E6BB" width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td>
+      <img class=point3 src="content/point3.svg">
+      <br><br><br><br>
+      <h1>I Freakin' <font color="red">Love</font> You</h1>
+      <br>
+      <font color="#DACFA8">
+        <h2>Yours Forever,</h2>
+        <h2>Joshua Draxten</h2>
+      </font>
+      </td> 
+</tr>  
+</table>
+<style>
+h1 {
+  text-align:center;
+  font-family:"Arial", Arial, sans-serif;
+  font-size:3em;
+}
+h2 {
+  text-align:center;
+  font-family:"Arial", Arial, sans-serif;
+  font-size:em;
+}
+p {
+  text-align:center;
+  font-family:"Arial", helvetica, sans-serif, bold;
+  font-size:1em;
+}
+table {
+  margin-left:-10px;
+  margin-top:-1%;
+  position:static;
+  width: 102%;
+  height: 105%;
+}
+img.point1 {
+  position:absolute;
+  margin-left:25%;
+  width: 10%;
+  top: 200%;
+  overflow: hidden;
+}
+img.point2 {
+  position:absolute;
+  margin-left:25%;
+  width: 11%;
+  top: 300%;
+  overflow: hidden;
+}
+img.point3 {
+  position:absolute;
+  margin-left:25%;
+  width: 11%;
+  top: 400%;
+  overflow: hidden;
+}
+img.banner {
+  position:absolute;
+  width: 100%;
+  bottom: 0px;
+  overflow: hidden;
+}
+img.heart {
+  position:absolute;
+  width: 10%;
+  top: 140%;
+  right: 20%;
+}
+img.light {
+  position:absolute;
+  width: 15%;
+  top: 260%;
+  right: 5%;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(-30deg);
+}
+img.nerd {
+  position:absolute;
+  width: 25%;
+  right: 75%;
+  bottom: -240%;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+}
+</style>
 
-    http://www.apache.org/licenses/LICENSE-2.0
+<script src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js"
+type="text/javascript" charset="utf-8"></script>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <title>Hello World</title>
-    </head>
-    <body>
-        <h1>By:Joshua Draxten</p>
-    </body>
+<script type="text/coffeescript">
+list = ["Perfect",
+        "Beautiful",
+        "Adorable",
+        "Sweet",
+        "Caring",
+        "so Sassy!",
+        "Cute :)",
+        "Dreamy",
+        "Gorgeous",
+        "Insane",
+        "Punk Rock",
+        "<font color='#FF0000'>C</font><font color='#FF7F00'>o</font><font color='#FFFF00'>l</font><font color='#00FF00'>o</font><font color='#0000FF'>r</font><font color='#4B0082'>f</font><font color='#8F00FF'>ul</font>"]
+
+change = ->
+  rand = Math.floor Math.random()*12
+  document.getElementById("attribute").innerHTML=list[rand]
+
+counter = window.setInterval(->
+  change()
+, 3000)
+</script>
+</body>
 </html>
